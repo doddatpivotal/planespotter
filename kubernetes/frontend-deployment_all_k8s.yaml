@@ -51,7 +51,7 @@ metadata:
   namespace: planespotter
 spec:
   rules:
-  - host: planespotter.demo.yves.local
+  - host: planespotter.pks.haas-124.pez.pivotal.io
     http:
       paths:
       - backend:
