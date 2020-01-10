@@ -72,6 +72,6 @@ data:
   config.ini: |
     [main]
     redis_server = redis-server
-    adsb_server_poll_url = https://public-api.adsbexchange.com/VirtualRadar/AircraftList.json
+    adsb_server_poll_url = https://adsbexchange.com/api/aircraft/json/
     adsb_poll_filter = ?fRegS=N
     adsb_type = poll

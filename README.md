@@ -67,3 +67,16 @@ Acknowledgments
 ===============
 I integrated a couple of ideas on how to deploy the App from https://github.com/nvpnathan, https://github.com/puckpuck and https://github.com/howardyoo. Thanks!
 
+## Updates
+
+(S1P Deck)[https://docs.google.com/presentation/d/1SUyW3A_KXLfmxdCXORBZeepM2i0PmetfEym_x9jsDKk/edit#slide=id.g420c03bb9e_0_13]
+
+To Install
+
+```bash
+kubectl create -f kubenetes/mysql_claim.yaml -n planespotter
+kubectl create -f kubenetes/mysql_pod.yaml -n planespotter
+kubectl create -f kubenetes/app-server-deployment_all_k8s.yaml -n planespotter
+kubectl create -f kubenetes/redis_and_adsb_sync_all_k8s.yaml -n planespotter
+kubectl create -f kubenetes/frontend-deployment_all_k8s.yaml -n planespotter
+```
